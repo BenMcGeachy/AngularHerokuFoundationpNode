@@ -4,51 +4,51 @@
 
 <div ng-show="!isWorking()">
     <!-- This div is only displayed in deskcops (see below for mobile phones)-->
-    <div class="hidden-phone">
+    <div class="hide-for-small large-12 columns">
         <div style="float: left">
             <div style="margin-bottom: 10px;">
-                <input type="text" ng-model="searchTerm" class="search-query" placeholder="Search">
+                <input type="text" ng-model="searchTerm" placeholder="Search" style="border-radius: 1.5em">
 
-                <p class="btn btn-primary" ng-click="doSearch(searchString)">Go</p>
+                <p class="button small radius" ng-click="doSearch(searchString)">Go</p>
             </div>
         </div>
 
         <div style="float: right">
-            <a href="#/new" class="btn btn-primary">New</a>
+            <a href="#/new" class="button small radius">New</a>
         </div>
 
 
-        <table width="80%" class="table">
+        <table class="table">
             <thead>
             <tr>
-                <th class='hidden-phone'>Id</th>
+                <th class='hide-for-small'>Id</th>
                 <th>Full Name</th>
                 <th>Company</th>
-                <th class='hidden-phone'>Title</th>
+                <th class='hide-for-small'>Title</th>
                 <th>Phone</th>
-                <th class='hidden-phone'>Email</th>
+                <th class='hide-for-small'>Email</th>
             </tr>
             </thead>
             <tbody>
 
             <tr ng-repeat="contact in contacts">
-                <td class='hidden-phone'>{{contact.Id}}</td>
+                <td class='hide-for-small'>{{contact.Id}}</td>
                 <td><a href="#/view/{{contact.Id}}">{{contact.FirstName}} {{contact.LastName}}</a></td>
                 <td>{{contact.Account.Name}}</td>
-                <td class='hidden-phone'>{{contact.Title}}</td>
+                <td class='hide-for-small'>{{contact.Title}}</td>
                 <td>{{contact.Phone}}</td>
-                <td class='hidden-phone'>{{contact.Email}}</td>
+                <td class='hide-for-small'>{{contact.Email}}</td>
             </tr>
             </tbody>
         </table>
     </div>
 
     <!-- This div is only displayed in mobile phones (see above for desktops) -->
-    <div class="visible-phone">
+    <div class="show-for-small small-12 columns">
         <form class="form-inline">
-            <input type="text" ng-model="searchTerm" class="input-medium search-query" placeholder="Search">
-            <button ng-click="doSearch(searchString)" class="btn btn-primary">Go</button>
-            <button ng-click="doCreate()" class="btn btn-default">&nbsp;+&nbsp;</button>
+            <input type="text" ng-model="searchTerm" class="small-6 columns" style="border-radius:1.5em" placeholder="Search">
+            <button ng-click="doSearch(searchString)" class="button small radius">Go</button>
+            <button ng-click="doCreate()" class="button small secondary radius">&nbsp;+&nbsp;</button>
         </form>
 
         <table class="table">
@@ -61,5 +61,4 @@
             </tr>
         </table>
     </div>
-
 </div>
