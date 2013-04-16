@@ -20,7 +20,7 @@
         </div>
 
 
-        <table class="table" style="width:100%">
+        <table class="table large-12 columns">
             <thead>
             <tr>
                 <th class='hide-for-small'>Id</th>
@@ -53,13 +53,13 @@
             <button ng-click="doCreate()" class="button small secondary radius">&nbsp;+&nbsp;</button>
         </form>
 
-        <table class="table" style="width:100%">
+        <table class="table small-12 columns">
             <tr ng-click="doView(contact.Id)" ng-repeat="contact in contacts">
                 <td> {{contact.FirstName}} {{contact.LastName}}
                     <br/>
                     <small><i>{{contact.Account.Name}}</i></small>
                 </td>
-                <td><i class="icon-chevron-right"></i></td>
+                <td><i class="right-arrow"></i></td>
             </tr>
         </table>
     </div>
