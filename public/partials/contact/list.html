@@ -5,20 +5,22 @@
 <div ng-show="!isWorking()">
     <!-- This div is only displayed in deskcops (see below for mobile phones)-->
     <div class="hide-for-small large-12 columns">
-        <div style="float: left">
-            <div style="margin-bottom: 10px;">
-                <input type="text" ng-model="searchTerm" placeholder="Search" style="border-radius: 1.5em">
-
-                <p class="button small radius" ng-click="doSearch(searchString)">Go</p>
-            </div>
+    
+        <div style="float:left; margin-bottom: 10px;">
+            <input type="text" ng-model="searchTerm" placeholder="Search" style="border-radius: 1.5em">
         </div>
+
+        <div style="float:left; margin-bottom:10px">
+             <p class="button small radius" ng-click="doSearch(searchString)">Go</p>
+        </div>
+
 
         <div style="float: right">
             <a href="#/new" class="button small radius">New</a>
         </div>
 
 
-        <table class="table">
+        <table class="table" style="width:100%">
             <thead>
             <tr>
                 <th class='hide-for-small'>Id</th>
@@ -51,7 +53,7 @@
             <button ng-click="doCreate()" class="button small secondary radius">&nbsp;+&nbsp;</button>
         </form>
 
-        <table class="table">
+        <table class="table" style="width:100%">
             <tr ng-click="doView(contact.Id)" ng-repeat="contact in contacts">
                 <td> {{contact.FirstName}} {{contact.LastName}}
                     <br/>
