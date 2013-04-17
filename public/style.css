@@ -1,0 +1,88 @@
+body {
+	background-color: rgb(17, 17, 17);
+}
+
+.main-area .ng-scope {
+	color: #CCC;
+	font-family: sans-serif;
+}
+
+.main-area .ng-scope a {
+	text-decoration: none;
+	color: #637BFF;
+}
+
+.main-area .ng-scope h2 {
+	color: #CCC;
+	font-family: sans-serif;	
+}
+
+.top-bar {
+	background-color: #6B6B6B;
+}
+
+.panel {
+	background: rgba(165, 142, 162, 0.5);
+}
+
+.panel .ng-scope {
+	color: #CCC;
+	font-family: sans-serif;
+}
+
+.panel .ng-scope a {
+	text-decoration: none;
+	color: #637BFF;
+}
+
+.ng-scope p {
+	color: #CCC;
+}
+
+label {
+	color: #CCC;
+}
+
+.error label {
+	color: rgb(255, 107, 107);
+}
+
+.table {
+	background: rgb(219, 207, 191);
+}
+
+table tr.even, table tr.alt, table tr:nth-of-type(even) {
+	background: rgb(213, 202, 202);
+}
+
+table .ng-binding {
+	color: #555;
+}
+
+.main-area .ng-scope table a {
+	color: #637BFF;
+}
+
+.search-bar, .small-top-search {
+	float:left; 
+	margin-bottom: 10px;
+}
+
+.search-button, .small-top-go {
+	float:left; 
+	margin-bottom:10px;
+	margin-left: 10px;
+}
+
+.top-new-button, .small-top-new {
+	float: right;
+}
+
+.main-area .ng-scope .button {
+	color: black;
+}
+
+.split.button span:before {
+	border-color: black transparent transparent transparent;
+	font-size: 0.8em;
+}

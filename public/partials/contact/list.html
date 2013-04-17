@@ -3,23 +3,27 @@
 </div>
 
 <div ng-show="!isWorking()">
+
+    <div class="large-12 small-12 columns">
+        <div class="row collapse">
+            <div class="large-3 small-3 columns">
+                <ul class="button-group">
+                    <a href="#/new" class="button small split">New<span></span></a>
+                </ul>
+            </div>
+
+            <div class="large-offset-5 small-offset-5 large-3 small-3 columns">
+                <input type="text" ng-model="searchTerm" placeholder="Search">
+            </div>
+            <div class="large-1 small-1 columns">
+                <a href='' class=" button postfix" ng-click="doSearch(searchString)"><i class="foundicon-search"></i></a>
+            </div>
+        </div>
+    </div>
+
     <!-- This div is only displayed in deskcops (see below for mobile phones)-->
     <div class="hide-for-small large-12 columns">
     
-        <div style="float:left; margin-bottom: 10px;">
-            <input type="text" ng-model="searchTerm" placeholder="Search" style="border-radius: 1.5em">
-        </div>
-
-        <div style="float:left; margin-bottom:10px">
-             <p class="button small radius" ng-click="doSearch(searchString)">Go</p>
-        </div>
-
-
-        <div style="float: right">
-            <a href="#/new" class="button small radius">New</a>
-        </div>
-
-
         <table class="table large-12 columns">
             <thead>
             <tr>
@@ -47,11 +51,6 @@
 
     <!-- This div is only displayed in mobile phones (see above for desktops) -->
     <div class="show-for-small small-12 columns">
-        <form class="form-inline">
-            <input type="text" ng-model="searchTerm" class="small-6 columns" style="border-radius:1.5em" placeholder="Search">
-            <button ng-click="doSearch(searchString)" class="button small radius">Go</button>
-            <button ng-click="doCreate()" class="button small secondary radius">&nbsp;+&nbsp;</button>
-        </form>
 
         <table class="table small-12 columns">
             <tr ng-click="doView(contact.Id)" ng-repeat="contact in contacts">
