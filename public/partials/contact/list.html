@@ -24,7 +24,7 @@
     <div class="small-12 large-12 columns">    
         <ul>
             <li class="small-12 large-12 columns panel" ng-repeat="contact in contacts" ng-click="doView(contact.Id)">
-                <div class="large-2 small-4 left">
+                <div class="large-2 small-3 left">
                     <a href="#/view/{{contact.Id}}" class="th radius image-fix"><img src="https://sphotos-b.xx.fbcdn.net/hphotos-snc7/307343_10151322448748657_623747077_n.jpg"></a>
                 </div>
 
@@ -54,6 +54,7 @@
                 <div class="large-offset-3 large-2 columns hide-for-small">
                     <a href="#/view/{{contact.Id}}" class="button">View Profile</a>
                 </div>           
+            <i class="foundicon-right-arrow show-for-small right"></i>
             
             </li>
         </ul>
