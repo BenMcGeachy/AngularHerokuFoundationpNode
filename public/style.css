@@ -86,3 +86,27 @@ table .ng-binding {
 	border-color: black transparent transparent transparent;
 	font-size: 0.8em;
 }
+
+ul li {
+	list-style-type: none; 
+}
+
+.panel h3 {
+	margin-top: -5px;
+	color: #CCC;
+	margin-bottom: 0px;
+}
+
+ul .panel:hover {
+	background-color: rgba(165, 142, 162, 0.2);
+}
+
+.panel .contact-list {
+	margin-left: 0px;
+}
+
+.panel .subtitle {
+	margin-top: -5px;
+	margin-bottom: 10px;
+}
+

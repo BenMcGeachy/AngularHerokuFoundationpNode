@@ -7,9 +7,9 @@
     <div class="large-12 small-12 columns">
         <div class="row collapse">
             <div class="large-3 small-3 columns">
-                <ul class="button-group">
+                
                     <a href="#/new" class="button small split">New<span></span></a>
-                </ul>
+            
             </div>
 
             <div class="large-offset-5 small-offset-5 large-3 small-3 columns">
@@ -23,43 +23,51 @@
 
     <!-- This div is only displayed in deskcops (see below for mobile phones)-->
     <div class="hide-for-small large-12 columns">
-    
-        <table class="table large-12 columns">
-            <thead>
-            <tr>
-                <th class='hide-for-small'>Id</th>
-                <th>Full Name</th>
-                <th>Company</th>
-                <th class='hide-for-small'>Title</th>
-                <th>Phone</th>
-                <th class='hide-for-small'>Email</th>
-            </tr>
-            </thead>
-            <tbody>
+        
+    <ul>
+            <li class="large-12 columns panel" ng-repeat="contact in contacts">
+                    <div class="large-2 columns">
+                        <a class="th radius"><img src="https://sphotos-b.xx.fbcdn.net/hphotos-snc7/307343_10151322448748657_623747077_n.jpg"></a>
+                    </div>
 
-            <tr ng-repeat="contact in contacts">
-                <td class='hide-for-small'>{{contact.Id}}</td>
-                <td><a href="#/view/{{contact.Id}}">{{contact.FirstName}} {{contact.LastName}}</a></td>
-                <td>{{contact.Account.Name}}</td>
-                <td class='hide-for-small'>{{contact.Title}}</td>
-                <td>{{contact.Phone}}</td>
-                <td class='hide-for-small'>{{contact.Email}}</td>
-            </tr>
-            </tbody>
-        </table>
+                    <div class="large-5 columns">
+                        <h3>{{contact.FirstName}} {{contact.LastName}}</h3>
+                        <p class='hide-for-small subtitle'><small>{{contact.Title}}</small></p>
+                        <ul class="contact-list">
+                            <li><i class="foundicon-page"></i>&nbsp;{{contact.Account.Name}}</li>
+                            <li><i class="foundicon-phone"></i>&nbsp;{{contact.Phone}}</li>
+                            <li class='hide-for-small'><i class="foundicon-mail"></i>&nbsp;<a href="mailto:{{contact.Email}}">{{contact.Email}}</a></li>
+                        </ul>
+                    </div>
+                    <div class="large-offset-3 large-2 columns">
+                        <a href='"#/view/{{contact.Id}}"' class="button">View Profile</a>
+                    </div>           
+            </li>
+    </ul>
+
     </div>
 
     <!-- This div is only displayed in mobile phones (see above for desktops) -->
     <div class="show-for-small small-12 columns">
 
-        <table class="table small-12 columns">
-            <tr ng-click="doView(contact.Id)" ng-repeat="contact in contacts">
-                <td> {{contact.FirstName}} {{contact.LastName}}
-                    <br/>
-                    <small><i>{{contact.Account.Name}}</i></small>
-                </td>
-                <td><i class="foundicon-right-arrow"></i></td>
-            </tr>
-        </table>
+        
+            <ul>
+                <li class="small-12 columns panel small-panel-remove" ng-click="doView(contact.Id)" ng-repeat="contact in contacts">
+                    
+                    <div class="small-4 columns">
+                        <img src="https://sphotos-b.xx.fbcdn.net/hphotos-snc7/307343_10151322448748657_623747077_n.jpg">
+                    </div>
+
+                    <div class="small-8 columns">
+                        {{contact.FirstName}} {{contact.LastName}}<br>
+                        <small><i>{{contact.Title}}</i></small>
+                    </div>
+<!-- 
+                    <div class="small-offset-1 small-1 columns">
+                        <i class="foundicon-right-arrow"></i>
+                    </div> -->
+                </li>
+            </ul>
+ 
     </div>
 </div>
