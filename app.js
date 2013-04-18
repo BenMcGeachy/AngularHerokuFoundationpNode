@@ -30,6 +30,8 @@ app.configure('development', function () {
 
 var client_id = process.env.client_id;
 var app_url = process.env.app_url;
+// var client_id = "3MVG9A2kN3Bn17hv50KCiOu0s1aYu.7SxHeA0Z.0.CEZ6c5jnXpo_Uw3SQJSKgs0xZGD52xqndd6RrwALmp9X";
+// var app_url = "http://localhost:3000";
 
 
 app.get('/', function (req, res) {
