@@ -97,6 +97,10 @@ ul li {
 	margin-bottom: 0px;
 }
 
+.panel h4 {
+	color: #CCC;
+}
+
 ul .panel:hover {
 	background-color: rgba(165, 142, 162, 0.2);
 }
@@ -105,8 +109,17 @@ ul .panel:hover {
 	margin-left: 0px;
 }
 
+.panel .contact-list-small {
+	margin-left: 0px;
+	line-height: 1.2em;
+}
+
 .panel .subtitle {
 	margin-top: -5px;
 	margin-bottom: 10px;
+}
+
+.image-fix {
+	width: 100%;
 }
 

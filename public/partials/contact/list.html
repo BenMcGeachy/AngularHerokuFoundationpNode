@@ -11,7 +11,6 @@
                     <a href="#/new" class="button small split">New<span></span></a>
             
             </div>
-
             <div class="large-offset-5 small-offset-5 large-3 small-3 columns">
                 <input type="text" ng-model="searchTerm" placeholder="Search">
             </div>
@@ -21,53 +20,44 @@
         </div>
     </div>
 
-    <!-- This div is only displayed in deskcops (see below for mobile phones)-->
-    <div class="hide-for-small large-12 columns">
-        
-    <ul>
-            <li class="large-12 columns panel" ng-repeat="contact in contacts">
-                    <div class="large-2 columns">
-                        <a class="th radius"><img src="https://sphotos-b.xx.fbcdn.net/hphotos-snc7/307343_10151322448748657_623747077_n.jpg"></a>
-                    </div>
+    
+    <div class="small-12 large-12 columns">    
+        <ul>
+            <li class="small-12 large-12 columns panel" ng-repeat="contact in contacts" ng-click="doView(contact.Id)">
+                <div class="large-2 small-4 left">
+                    <a href="#/view/{{contact.Id}}" class="th radius image-fix"><img src="https://sphotos-b.xx.fbcdn.net/hphotos-snc7/307343_10151322448748657_623747077_n.jpg"></a>
+                </div>
 
-                    <div class="large-5 columns">
-                        <h3>{{contact.FirstName}} {{contact.LastName}}</h3>
-                        <p class='hide-for-small subtitle'><small>{{contact.Title}}</small></p>
-                        <ul class="contact-list">
-                            <li><i class="foundicon-page"></i>&nbsp;{{contact.Account.Name}}</li>
-                            <li><i class="foundicon-phone"></i>&nbsp;{{contact.Phone}}</li>
-                            <li class='hide-for-small'><i class="foundicon-mail"></i>&nbsp;<a href="mailto:{{contact.Email}}">{{contact.Email}}</a></li>
-                        </ul>
-                    </div>
-                    <div class="large-offset-3 large-2 columns">
-                        <a href='"#/view/{{contact.Id}}"' class="button">View Profile</a>
-                    </div>           
-            </li>
-    </ul>
-
-    </div>
-
-    <!-- This div is only displayed in mobile phones (see above for desktops) -->
-    <div class="show-for-small small-12 columns">
-
-        
-            <ul>
-                <li class="small-12 columns panel small-panel-remove" ng-click="doView(contact.Id)" ng-repeat="contact in contacts">
+                <div class="large-5 small-8 columns">
                     
-                    <div class="small-4 columns">
-                        <img src="https://sphotos-b.xx.fbcdn.net/hphotos-snc7/307343_10151322448748657_623747077_n.jpg">
+                    <div class="hide-for-small">
+                        <h3>{{contact.FirstName}} {{contact.LastName}}</h3>
+                        <p class="subtitle"><small>{{contact.Title}}</small></p>
+                    </div>
+                    <div class="hide-for-medium-up">
+                        <h4>{{contact.FirstName}} {{contact.LastName}}</h4>
                     </div>
 
-                    <div class="small-8 columns">
-                        {{contact.FirstName}} {{contact.LastName}}<br>
-                        <small><i>{{contact.Title}}</i></small>
-                    </div>
-<!-- 
-                    <div class="small-offset-1 small-1 columns">
-                        <i class="foundicon-right-arrow"></i>
-                    </div> -->
-                </li>
-            </ul>
- 
+                    
+                    <ul class="contact-list hide-for-small show-for-landscape">
+                        <li><i class="foundicon-page"></i>&nbsp;{{contact.Account.Name}}</li>
+                        <li><i class="foundicon-phone"></i>&nbsp;{{contact.Phone}}</li>
+                        <li><i class="foundicon-mail"></i>&nbsp;<a href="mailto:{{contact.Email}}">{{contact.Email}}</a></li>
+                    </ul>
+
+                    <ul class="contact-list-small hide-for-medium hide-for-medium-up hide-for-landscape">
+                        <small><li><i class="foundicon-phone"></i>&nbsp;{{contact.Phone}}</li></small>
+                        <small><li><i class="foundicon-mail"></i>&nbsp;<a href="mailto:{{contact.Email}}">{{contact.Email}}</a></li></small>
+                    </ul>
+
+                </div>
+                <div class="large-offset-3 large-2 columns hide-for-small">
+                    <a href="#/view/{{contact.Id}}" class="button">View Profile</a>
+                </div>           
+            
+            </li>
+        </ul>
+
     </div>
+
 </div>
