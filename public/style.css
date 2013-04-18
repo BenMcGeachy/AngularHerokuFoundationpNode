@@ -91,6 +91,10 @@ ul li {
 	list-style-type: none; 
 }
 
+.panel {
+	border-radius: 10px;
+}
+
 .panel h3 {
 	margin-top: -5px;
 	color: #CCC;
@@ -123,3 +127,6 @@ ul .panel:hover {
 	width: 100%;
 }
 
+.split.button span:before {
+	margin-top: 3px;
+}
