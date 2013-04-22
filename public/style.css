@@ -101,7 +101,15 @@ ul li {
 	margin-bottom: 0px;
 }
 
-.panel h4 {
+.panel h4{
+	color: #CCC;
+}
+
+.panel h5{
+	color: #CCC;
+}
+
+.panel h6{
 	color: #CCC;
 }
 
@@ -129,4 +137,24 @@ ul .panel:hover {
 
 .split.button span:before {
 	margin-top: 3px;
+}
+
+.button.small.radius.btn-width {
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.panel > :last-child {
+	margin: 1.25em 0 1.1875em;
+}
+
+.row.row-height {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.summary-text {
+	font-size: 12px;
+	line-height: 1.4;
 }
