@@ -153,3 +153,25 @@ ul .panel:hover {
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
+.split.button.profile-btn span:before {
+	border-color: transparent;
+}
+
+.split-icons {
+	position: absolute;
+	margin-top: 6px;
+	margin-left: -6px;
+}
+
+.section-container section .content, .section-container .section .content, .section-container.auto section .content, .section-container.auto .section .content {
+	background: transparent;
+}
+
+.section-container.tabs section .content, .section-container.tabs .section .content {
+	border: none;
+}
+
+.section-container.tabs section.active .title, .section-container.tabs .section.active .title {
+	z-index: -1;
+}

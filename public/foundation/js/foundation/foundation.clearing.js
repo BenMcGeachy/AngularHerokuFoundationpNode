@@ -52,7 +52,6 @@
             }
           }
         });
-
         return this.settings.init;
       } else {
         // fire method

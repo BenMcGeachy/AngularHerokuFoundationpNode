@@ -1,11 +1,14 @@
 <div class="row">
 
-<!-- LEFT COLUMN -->
-    <div class="large-6 small-12 columns">
+<div class="section-container tabs hide-for-medium-up" data-section="tabs">
+  <section>
+    <p class="title" data-section-title><a href="#">Profile & Background</a></p>
+    <div style="border: none; background: transparent;" class="content" data-section-content>
+      <div class="large-6 small-12 columns">
         
         <div class="panel">
             <div class="row">
-                <div class="large-5 small-3 columns">
+                <div class="large-5 small-4 columns">
                     <a style="margin-left:10px; margin-right:10px" href="#/view/{{contact.Id}}" class="th radius image-fix"><img src="https://sphotos-b.xx.fbcdn.net/hphotos-snc7/307343_10151322448748657_623747077_n.jpg"></a>
                 </div>
 
@@ -22,15 +25,18 @@
 
             <div class="row" style="margin-bottom: 0;">
                 <div class="large-4 small-4 columns">
-                   <a href="#" class="button small radius split">Phone<span></span></a>
+                   <a href="#" class="button small radius split profile-btn hide-for-small">Phone<span><i class="foundicon-phone split-icons"></i></span></a>
+                <a href="#" class="button small radius profile-btn hide-for-large hide-for-medium"><i class="foundicon-phone"></i></a>
                 </div>
 
                 <div class="large-4 small-4 columns">
-                    <a href="mailto:{{contact.Email}}?subject=Salesforce%20Contact%20Email" class="button small radius split">Email <span></span></a>
+                    <a href="mailto:{{contact.Email}}?subject=Salesforce%20Contact%20Email" class="button small radius split profile-btn hide-for-small">Email<span><i class="foundicon-mail split-icons"></i></span></a>
+                    <a href="mailto:{{contact.Email}}?subject=Salesforce%20Contact%20Email" class="button small radius profile-btn hide-for-large hide-for-medium"><i class="foundicon-mail"></i></a>
                 </div>
 
                 <div class="large-4 small-4 columns">
-                    <a href="#/edit/{{contact.Id}}" class="button small radius split ">Edit<span></span></a>
+                    <a href="#/edit/{{contact.Id}}" class="button small radius split profile-btn hide-for-small">Edit<span><i class="foundicon-edit split-icons"></i></span></a>
+                    <a href="#/edit/{{contact.Id}}" class="button small radius profile-btn hide-for-large hide-for-medium"><i class="foundicon-edit"></i></a>
                 </div>
             </div>
 
@@ -41,8 +47,86 @@
                 <h3>Background</h3>
                 <h6><small><i class="foundicon-page" style="color: #CCC"></i></small>&nbsp;Summary</h6>
                 <p>Pommy ipsum bit of a div cottage pie know your onions big light nonsense muck about pennyboy and we all like figgy pudding, grab a jumper anorak fork out scrumpy owt blummin' blighty. Rambunctious brainbox chap utter shambles bag egg's old boy, nigh give you a bell quid scouser bag egg's old boy, bugger scrubber complete mare. Therewith posh nosh stupendous chippy one feels that gobsmacked, black pudding eton mess half-inch it scouser one off, eton mess Queen Elizabeth horses for courses trouble and strife one off, a bit miffed doing my nut in crumpets supper.</p>
+            </div>
+        </div>
+    </div>
 
+    </div>
+  </section
+  >
+  <section>
+    <p class="title" data-section-title><a href="#">Pictures & Info</a></p>
+    <div style="border: none; background: transparent;" class="content" data-section-content>
+       <div class="large-6 small-12 columns">
+        <div class="panel">
+            <ul class="small-block-grid-2 large-block-grid-3 clearing-thumbs" data-clearing>
+                <li><a href="https://sphotos-a.xx.fbcdn.net/hphotos-snc6/281274_10151183083818657_83184301_n.jpg"><img data-caption="Look it's Ben! Test 1" src="https://sphotos-a.xx.fbcdn.net/hphotos-snc6/281274_10151183083818657_83184301_n.jpg"></a></li>
+                <li><a href="placeholder.jpg"><img data-caption="Look it's Ben! Test 2" src="placeholder.jpg"></a></li>
+                <li><a href="placeholder.jpg"><img data-caption="Look it's Ben! Test 3" src="placeholder.jpg"></a></li>
+                <li><a href="placeholder.jpg"><img data-caption="Look it's Ben! Test 4" src="placeholder.jpg"></a></li>
+                <li><a href="placeholder.jpg"><img data-caption="Look it's Ben! Test 5" src="placeholder.jpg"></a></li>
+                <li><a href="placeholder.jpg"><img data-caption="Look it's Ben! Test 6" src="placeholder.jpg"></a></li>
+            </ul>
 
+            <hr>
+
+            <p>Pommy ipsum bangers and mash not some sort of dosshouse flog a dead horse double dutch collywobbles ridicule indeed, on his tod shepherd's pie bottled it indeed twiglets scrote. Ridiculous stop arsing around naff have a butcher's at this what a load of guff warts and all curtain twitching fork out jolly Queen Elizabeth, guiness lost her marbles copped a bollocking 10 pence mix bloody mary have a bash fancied a flutter. Ask your mother if sweet fanny adams bogroll bit of alright bag egg's old boy Prince Charles middle class, yorkshire pudding nigh down the village green on't goggle box knackered jolly good, it's just not cricket macca rumpy pumpy yorkshire mixture bit of a Jack the lad. </p>
+
+            <hr>
+
+            <p>Pommy ipsum gob jellied eels a cuppa argy-bargy old girl, marmite macca sweets old chap crisps stiff upper lip superb, chips absobloodylootely fancied a flutter yorkshire pudding rambunctious. Gob 'tis through the dales old chap alright geezer hard cheese old boy yorkshire pudding, one off lost her marbles god save the queen scrumpy her Majesty's pleasure, rubbish curry sauce on his bill penny-dreadful have a gander. Curry sauce pork dripping working class one would like could murder a pint pezzy little for sooth don't get your knickers in a twist, blummin' Queen Elizabeth scrumpy eton mess bovver boots ever so lovely.</p>
+        </div>
+    </div>
+    </div>
+  </section>
+</div>
+
+<!-- LEFT COLUMN -->
+
+<div class="hide-for-small">
+    <div class="large-6 small-12 columns">
+        
+        <div class="panel">
+            <div class="row">
+                <div class="large-5 small-4 columns">
+                    <a style="margin-left:10px; margin-right:10px" href="#/view/{{contact.Id}}" class="th radius image-fix"><img src="https://sphotos-b.xx.fbcdn.net/hphotos-snc7/307343_10151322448748657_623747077_n.jpg"></a>
+                </div>
+
+                <div class="large-7 small-8 columns">
+                    <h3>{{contact.FirstName}} {{contact.LastName}}</h3>
+                    <p class="subtitle"><small>{{contact.Title}}</small></p>
+                    <ul>
+                        <li><i class="foundicon-page"></i>&nbsp;{{contact.Account.Name}}</li>
+                        <li><i class="foundicon-phone"></i>&nbsp;{{contact.Phone}}</li>
+                        <li><i class="foundicon-mail"></i>&nbsp;<a href="mailto:{{contact.Email}}">{{contact.Email}}</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 0;">
+                <div class="large-4 small-4 columns">
+                   <a href="#" class="button small radius split profile-btn hide-for-small">Phone<span><i class="foundicon-phone split-icons"></i></span></a>
+                <a href="#" class="button small radius profile-btn hide-for-large hide-for-medium"><i class="foundicon-phone"></i></a>
+                </div>
+
+                <div class="large-4 small-4 columns">
+                    <a href="mailto:{{contact.Email}}?subject=Salesforce%20Contact%20Email" class="button small radius split profile-btn hide-for-small">Email<span><i class="foundicon-mail split-icons"></i></span></a>
+                    <a href="mailto:{{contact.Email}}?subject=Salesforce%20Contact%20Email" class="button small radius profile-btn hide-for-large hide-for-medium"><i class="foundicon-mail"></i></a>
+                </div>
+
+                <div class="large-4 small-4 columns">
+                    <a href="#/edit/{{contact.Id}}" class="button small radius split profile-btn hide-for-small">Edit<span><i class="foundicon-edit split-icons"></i></span></a>
+                    <a href="#/edit/{{contact.Id}}" class="button small radius profile-btn hide-for-large hide-for-medium"><i class="foundicon-edit"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="panel">
+            <div class="row row-height">
+                <h3>Background</h3>
+                <h6><small><i class="foundicon-page" style="color: #CCC"></i></small>&nbsp;Summary</h6>
+                <p>Pommy ipsum bit of a div cottage pie know your onions big light nonsense muck about pennyboy and we all like figgy pudding, grab a jumper anorak fork out scrumpy owt blummin' blighty. Rambunctious brainbox chap utter shambles bag egg's old boy, nigh give you a bell quid scouser bag egg's old boy, bugger scrubber complete mare. Therewith posh nosh stupendous chippy one feels that gobsmacked, black pudding eton mess half-inch it scouser one off, eton mess Queen Elizabeth horses for courses trouble and strife one off, a bit miffed doing my nut in crumpets supper.</p>
             </div>
         </div>
     </div>
@@ -52,45 +136,27 @@
 <!-- RIGHT COLUMN -->
     <div class="large-6 small-12 columns">
         <div class="panel">
-        <ul class="small-block-grid-2 large-block-grid-3 clearing-thumbs" data-clearing>
-            <li><a href="placeholder.jpg"><img data-caption="Look it's Ben! Test 1" src="placeholder.jpg"></a></li>
-            <li><a href="placeholder.jpg"><img data-caption="Look it's Ben! Test 2" src="placeholder.jpg"></a></li>
-            <li><a href="placeholder.jpg"><img data-caption="Look it's Ben! Test 3" src="placeholder.jpg"></a></li>
-            <li><a href="placeholder.jpg"><img data-caption="Look it's Ben! Test 4" src="placeholder.jpg"></a></li>
-            <li><a href="placeholder.jpg"><img data-caption="Look it's Ben! Test 5" src="placeholder.jpg"></a></li>
-            <li><a href="placeholder.jpg"><img data-caption="Look it's Ben! Test 6" src="placeholder.jpg"></a></li>
-        </ul>
+            <ul class="small-block-grid-2 large-block-grid-3 clearing-thumbs" data-clearing>
+                <li><a href="https://sphotos-a.xx.fbcdn.net/hphotos-snc6/281274_10151183083818657_83184301_n.jpg"><img data-caption="Look it's Ben! Test 1" src="https://sphotos-a.xx.fbcdn.net/hphotos-snc6/281274_10151183083818657_83184301_n.jpg"></a></li>
+                <li><a href="placeholder.jpg"><img data-caption="Look it's Ben! Test 2" src="placeholder.jpg"></a></li>
+                <li><a href="placeholder.jpg"><img data-caption="Look it's Ben! Test 3" src="placeholder.jpg"></a></li>
+                <li><a href="placeholder.jpg"><img data-caption="Look it's Ben! Test 4" src="placeholder.jpg"></a></li>
+                <li><a href="placeholder.jpg"><img data-caption="Look it's Ben! Test 5" src="placeholder.jpg"></a></li>
+                <li><a href="placeholder.jpg"><img data-caption="Look it's Ben! Test 6" src="placeholder.jpg"></a></li>
+            </ul>
 
-        <hr>
+            <hr>
 
-        <p>Pommy ipsum bangers and mash not some sort of dosshouse flog a dead horse double dutch collywobbles ridicule indeed, on his tod shepherd's pie bottled it indeed twiglets scrote. Ridiculous stop arsing around naff have a butcher's at this what a load of guff warts and all curtain twitching fork out jolly Queen Elizabeth, guiness lost her marbles copped a bollocking 10 pence mix bloody mary have a bash fancied a flutter. Ask your mother if sweet fanny adams bogroll bit of alright bag egg's old boy Prince Charles middle class, yorkshire pudding nigh down the village green on't goggle box knackered jolly good, it's just not cricket macca rumpy pumpy yorkshire mixture bit of a Jack the lad. </p>
+            <p>Pommy ipsum bangers and mash not some sort of dosshouse flog a dead horse double dutch collywobbles ridicule indeed, on his tod shepherd's pie bottled it indeed twiglets scrote. Ridiculous stop arsing around naff have a butcher's at this what a load of guff warts and all curtain twitching fork out jolly Queen Elizabeth, guiness lost her marbles copped a bollocking 10 pence mix bloody mary have a bash fancied a flutter. Ask your mother if sweet fanny adams bogroll bit of alright bag egg's old boy Prince Charles middle class, yorkshire pudding nigh down the village green on't goggle box knackered jolly good, it's just not cricket macca rumpy pumpy yorkshire mixture bit of a Jack the lad. </p>
 
-        <hr>
+            <hr>
 
-        <p>Pommy ipsum gob jellied eels a cuppa argy-bargy old girl, marmite macca sweets old chap crisps stiff upper lip superb, chips absobloodylootely fancied a flutter yorkshire pudding rambunctious. Gob 'tis through the dales old chap alright geezer hard cheese old boy yorkshire pudding, one off lost her marbles god save the queen scrumpy her Majesty's pleasure, rubbish curry sauce on his bill penny-dreadful have a gander. Curry sauce pork dripping working class one would like could murder a pint pezzy little for sooth don't get your knickers in a twist, blummin' Queen Elizabeth scrumpy eton mess bovver boots ever so lovely.</p>
-    </div>
+            <p>Pommy ipsum gob jellied eels a cuppa argy-bargy old girl, marmite macca sweets old chap crisps stiff upper lip superb, chips absobloodylootely fancied a flutter yorkshire pudding rambunctious. Gob 'tis through the dales old chap alright geezer hard cheese old boy yorkshire pudding, one off lost her marbles god save the queen scrumpy her Majesty's pleasure, rubbish curry sauce on his bill penny-dreadful have a gander. Curry sauce pork dripping working class one would like could murder a pint pezzy little for sooth don't get your knickers in a twist, blummin' Queen Elizabeth scrumpy eton mess bovver boots ever so lovely.</p>
+        </div>
     </div>
 <!-- END RIGHT COLUMN -->
-
 </div>
-
-
-
-
-
-<!-- <div class="large-4 small-12 columns panel radius">
-    <p><strong>{{contact.FirstName}} {{contact.LastName}}</strong></p>
-
-    <p>{{contact.Title}}</p>
-
-    <p ng-show="contact.Account.Name">Account: {{contact.Account.Name}}</p>
-
-    <p>Email: <a href="mailto:{{contact.Email}}">{{contact.Email}}</a></p>
-
-    <p>Phone: <a href="tel:{{contact.Phone}}">{{contact.Phone}}</a></p>
-
-    <p>
-        <a class="button small secondary radius" href="#/edit/{{contact.Id}}">Edit</a>
-        <a class="button small radius" href="#/contacts">Back to Contacts</a>
-    </p>
-</div> -->
+</div>
+<script>
+    $(document).foundation();
+</script>
