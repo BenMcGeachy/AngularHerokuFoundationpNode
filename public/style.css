@@ -175,3 +175,7 @@ ul .panel:hover {
 .section-container.tabs section.active .title, .section-container.tabs .section.active .title {
 	z-index: -1;
 }
+
+.img-width li a img{
+	width: 100%;
+}
