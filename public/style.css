@@ -208,23 +208,26 @@ ul .panel:hover {
 	border-bottom: none;
 }
 
-@media only screen and (max-width : 320px) {
-	.touch .tooltip {
-		margin-left: 10px;
-		margin-top: -5px;
-	}
-	.touch .tooltip .nub {
-		left: 250px !important;
-	}
+@media only screen and (max-width: 320px) {
+    .tooltip {
+        max-width: 90%;
+        margin-top: -8px;
+    }
+    .tooltip .nub {
+        left: 265px !important;
+    }
 }
 
-@media only screen and (min-width : 321px) {
-	.touch .tooltip {
-		margin-left: 20px;
-	}
+@media only screen and (min-width: 321px) {
+    .tooltip {
+        margin-left: 10px;
+        max-width: 90%;
+        margin-top: -8px;
+    }
 
-	.touch .tooltip .nub {
-		left: 340px !important;
-	}
+    .tooltip .nub {
+        left: 415px !important;
+    }
+
 }
 
