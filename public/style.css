@@ -207,8 +207,3 @@ ul .panel:hover {
 .has-tip:hover{
 	border-bottom: none;
 }
-
-.tooltip {
-    width: 150px !important;
-    word-wrap: break-word;
-}
