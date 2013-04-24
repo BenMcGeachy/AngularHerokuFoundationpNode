@@ -188,6 +188,11 @@ ul .panel:hover {
 
 .section-container.tabs section .title, .section-container.tabs .section .title {
 	background: rgba(165, 142, 162, 0.4);
+	border:none;
+}
+
+.section-container.tabs section:last-child .title, .section-container.tabs .section:last-child .title {
+	border: none;
 }
 
 .edit-row {
