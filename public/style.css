@@ -165,17 +165,27 @@ ul .panel:hover {
 }
 
 .section-container section .content, .section-container .section .content, .section-container.auto section .content, .section-container.auto .section .content {
-	background: transparent;
+	background: rgba(165, 142, 162, 0.2);
 }
 
 .section-container.tabs section .content, .section-container.tabs .section .content {
-	border: none;
+	border: #CCC;
 }
 
 .section-container.tabs section.active .title, .section-container.tabs .section.active .title {
 	z-index: -1;
+	background: rgba(165, 142, 162, 0.2);
+	border: #CCC;
 }
 
 .img-width li a img{
 	width: 100%;
+}
+
+.section-container.tabs section .title a, .section-container.tabs .section .title a {
+	color: #CCC;
+}
+
+.section-container.tabs section .title, .section-container.tabs .section .title {
+	background: rgba(165, 142, 162, 0.4);
 }
