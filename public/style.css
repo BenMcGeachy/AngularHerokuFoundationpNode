@@ -219,8 +219,12 @@ ul .panel:hover {
 }
 
 @media only screen and (min-width : 321px) {
+	.touch .tooltip {
+		margin-left: 20px;
+	}
+
 	.touch .tooltip .nub {
-		left: 300px !important;
+		left: 340px !important;
 	}
 }
 
