@@ -119,8 +119,10 @@ function ContactDetailCtrl($scope, AngularForce, $location, $routeParams, Contac
                     $scope.$apply();//Required coz sfdc uses jquery.ajax
                 });
         });
+        $scope.formTitle = 'Edit Contact';
     } else {
         $scope.contact = new Contact();
+        $scope.formTitle = 'New Contact';
         //$scope.$apply();
     }
 

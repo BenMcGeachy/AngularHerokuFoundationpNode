@@ -189,3 +189,21 @@ ul .panel:hover {
 .section-container.tabs section .title, .section-container.tabs .section .title {
 	background: rgba(165, 142, 162, 0.4);
 }
+
+.edit-row {
+	padding-top: 10px;
+}
+ 
+.has-tip {
+	color: #CCC;
+	border-bottom: none;
+}
+
+.has-tip:hover{
+	border-bottom: none;
+}
+
+.tooltip {
+    width: 150px !important;
+    word-wrap: break-word;
+}
