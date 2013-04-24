@@ -207,3 +207,11 @@ ul .panel:hover {
 .has-tip:hover{
 	border-bottom: none;
 }
+
+.touch .tooltip {
+	margin-left: 10px;
+	margin-top: -5px;
+}
+.touch .tooltip .nub {
+	left: 250px !important;
+}
