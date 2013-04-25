@@ -236,5 +236,9 @@ ul .panel:hover {
 	.touch .tooltip .nub {
 		left: 375px !important;
 	}
+
+	.split-icons {
+		margin-left: 10px;
+	}
 }
 
