@@ -158,6 +158,10 @@ ul .panel:hover {
 	border-color: transparent;
 }
 
+.button.small.radius.split.profile-btn {
+	width: 100%;
+}
+
 .split-icons {
 	position: absolute;
 	margin-top: 6px;
