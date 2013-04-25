@@ -168,10 +168,6 @@ ul .panel:hover {
 	margin-left: -6px;
 }
 
-.split-icons .touch {
-	margin-left: 5px;
-}
-
 .section-container section .content, .section-container .section .content, .section-container.auto section .content, .section-container.auto .section .content {
 	background: rgba(165, 142, 162, 0.2);
 }
@@ -223,6 +219,10 @@ ul .panel:hover {
 	}
 	.touch .tooltip .nub {
 		left: 250px !important;
+	}
+
+	.split-icons {
+		margin-left: 10px;
 	}
 }
 
