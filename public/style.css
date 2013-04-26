@@ -2,6 +2,14 @@ body {
 	background-color: rgb(17, 17, 17);
 }
 
+h3 {
+	color: #CCC;
+}
+
+h6 {
+	color: #CCC;
+}
+
 .main-area .ng-scope {
 	color: #CCC;
 	font-family: sans-serif;
@@ -15,6 +23,10 @@ body {
 .main-area .ng-scope h2 {
 	color: #CCC;
 	font-family: sans-serif;	
+}
+
+.main-area .ng-scope .view-name {
+	margin-bottom:-5px;
 }
 
 .top-bar {
@@ -152,6 +164,7 @@ ul .panel:hover {
 .row.row-height {
 	margin-top: 0;
 	margin-bottom: 0;
+	padding: 15px;
 }
 
 .split.button.profile-btn span:before {
@@ -224,6 +237,11 @@ ul .panel:hover {
 	.split-icons {
 		margin-left: 10px;
 	}
+
+	.th.radius.image-fix-view {
+		margin-top: 10px;
+		margin-left: 10px;
+	}
 }
 
 @media only screen and (min-width : 321px) {
@@ -241,4 +259,5 @@ ul .panel:hover {
 		margin-left: 10px;
 	}
 }
+
 

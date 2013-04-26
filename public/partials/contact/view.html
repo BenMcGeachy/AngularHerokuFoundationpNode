@@ -4,16 +4,15 @@
       <section>
         <p class="title" data-section-title><a href="#">Profile & Background</a></p>
         <div class="content" data-section-content>
-            <div class="panel" style="margin-top: 20px">
-                <div class="row" style="font-size: 70%; margin-top: 20px">
+                <div class="row">
                     <div class="large-5 small-5 columns">
-                        <a style="margin-left:10px; margin-right:10px" href="#/view/{{contact.Id}}" class="th radius image-fix"><img src="https://sphotos-b.xx.fbcdn.net/hphotos-snc7/307343_10151322448748657_623747077_n.jpg"></a>
+                        <a href="#/view/{{contact.Id}}" class="th radius image-fix-view"><img src="https://sphotos-b.xx.fbcdn.net/hphotos-snc7/307343_10151322448748657_623747077_n.jpg"></a>
                     </div>
 
                     <div class="large-7 small-7 columns">
-                        <h3>{{contact.FirstName}} {{contact.LastName}}</h3>
+                        <h2 class="view-name">{{contact.FirstName}} {{contact.LastName}}</h2>
                         <p class="subtitle"><small>{{contact.Title}}</small></p>
-                        <ul>
+                        <ul style="font-size: 75%">
                             <li><i class="foundicon-page"></i>&nbsp;{{contact.Account.Name}}</li>
                             <li><i class="foundicon-phone"></i>&nbsp;{{contact.Phone}}</li>
                             <li><i class="foundicon-mail"></i>&nbsp;<a href="mailto:{{contact.Email}}">{{contact.Email}}</a></li>
@@ -21,38 +20,32 @@
                     </div>
                 </div>
 
-                <div class="row" style="margin-bottom: 0;">
+                <div class="row" style="margin-bottom: 0; margin-top: 20px;">
                     <div class="large-4 small-12 columns">
                      <a href="#" class="button small radius split profile-btn ">Phone<span><i class="foundicon-phone split-icons"></i></span></a>
-                    <!--  <a href="#" class="button small radius profile-btn hide-for-large hide-for-medium"><i class="foundicon-phone"></i></a> -->
                  </div>
 
                  <div class="large-4 small-12 columns">
                     <a href="mailto:{{contact.Email}}?subject=Salesforce%20Contact%20Email" class="button small radius split profile-btn ">Email<span><i class="foundicon-mail split-icons"></i></span></a>
-                    <!-- <a href="mailto:{{contact.Email}}?subject=Salesforce%20Contact%20Email" class="button small radius profile-btn hide-for-large hide-for-medium"><i class="foundicon-mail"></i></a> -->
                 </div>
 
                 <div class="large-4 small-12 columns">
                     <a href="#/edit/{{contact.Id}}" class="button small radius split profile-btn">Edit<span><i class="foundicon-edit split-icons"></i></span></a>
-                  <!--   <a href="#/edit/{{contact.Id}}" class="button small radius profile-btn hide-for-large hide-for-medium"><i class="foundicon-edit"></i></a> -->
                 </div>
             </div>
 
-        </div>
+            <hr>
 
-        <div class="panel">
             <div class="row row-height">
                 <h3>Background</h3>
                 <h6><small><i class="foundicon-page" style="color: #CCC"></i></small>&nbsp;Summary</h6>
                 <p>Pommy ipsum bit of a div cottage pie know your onions big light nonsense muck about pennyboy and we all like figgy pudding, grab a jumper anorak fork out scrumpy owt blummin' blighty. Rambunctious brainbox chap utter shambles bag egg's old boy, nigh give you a bell quid scouser bag egg's old boy, bugger scrubber complete mare. Therewith posh nosh stupendous chippy one feels that gobsmacked, black pudding eton mess half-inch it scouser one off, eton mess Queen Elizabeth horses for courses trouble and strife one off, a bit miffed doing my nut in crumpets supper.</p>
             </div>
-        </div>
     </div>
 </section>
 <section>
     <p class="title" data-section-title><a href="#">Pictures & Info</a></p>
     <div class="content" data-section-content>
-    <div class="panel">
         <ul class="img-width small-block-grid-2 large-block-grid-3 clearing-thumbs" data-clearing>
             <li><a href="Arryn.png"><img data-caption="House Arryn" src="Arryn.png"></a></li>
             <li><a href="Baratheon.png"><img data-caption="House Baratheon" src="Baratheon.png"></a></li>
@@ -70,7 +63,6 @@
 
         <p>Pommy ipsum gob jellied eels a cuppa argy-bargy old girl, marmite macca sweets old chap crisps stiff upper lip superb, chips absobloodylootely fancied a flutter yorkshire pudding rambunctious. Gob 'tis through the dales old chap alright geezer hard cheese old boy yorkshire pudding, one off lost her marbles god save the queen scrumpy her Majesty's pleasure, rubbish curry sauce on his bill penny-dreadful have a gander. Curry sauce pork dripping working class one would like could murder a pint pezzy little for sooth don't get your knickers in a twist, blummin' Queen Elizabeth scrumpy eton mess bovver boots ever so lovely.</p>
     </div>
-</div>
 </section>
 </div>
 
