@@ -203,6 +203,7 @@ ul .panel:hover {
 	color: #CCC;
 	width: 160px;
 	text-align: center;
+	padding: 4px;
 }
 
 .section-container.tabs section .title, .section-container.tabs .section .title {
@@ -210,12 +211,14 @@ ul .panel:hover {
 	border:none;
 	width: 160px;
 	text-align: center;
+	height: 30px;
 }
 
 .section-container.tabs section:last-child .title, .section-container.tabs .section:last-child .title {
 	border: none;
 	width: 160px;
 	text-align: center;
+	height: 30px;
 
 }
 
