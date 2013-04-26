@@ -201,15 +201,22 @@ ul .panel:hover {
 
 .section-container.tabs section .title a, .section-container.tabs .section .title a {
 	color: #CCC;
+	width: 160px;
+	text-align: center;
 }
 
 .section-container.tabs section .title, .section-container.tabs .section .title {
 	background: rgba(165, 142, 162, 0.4);
 	border:none;
+	width: 160px;
+	text-align: center;
 }
 
 .section-container.tabs section:last-child .title, .section-container.tabs .section:last-child .title {
 	border: none;
+	width: 160px;
+	text-align: center;
+
 }
 
 .edit-row {
