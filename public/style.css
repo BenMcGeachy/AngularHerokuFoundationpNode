@@ -258,6 +258,10 @@ ul .panel:hover {
 	.touch .split-icons {
 		margin-left: 10px;
 	}
+
+	.subtitle {
+		margin-bottom: 2px;
+	}
 }
 
 .section-container.tabs.hide-for-medium-up {
