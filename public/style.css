@@ -260,4 +260,6 @@ ul .panel:hover {
 	}
 }
 
-
+.section-container.tabs.hide-for-medium-up {
+	margin-top: -30px;
+}
